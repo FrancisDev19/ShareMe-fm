@@ -3,7 +3,7 @@ import { HiMenu } from "react-icons/hi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { Link, Route, Routes } from "react-router-dom";
 
-import { Sidebar, Login, UserProfile } from "../components";
+import { Sidebar, UserProfile } from "../components";
 import Pins from "./Pins";
 import { client } from "../client";
 import { userQuery } from "../utils/data";
@@ -28,6 +28,7 @@ const Home = () => {
     client.fetch(query).then((data) => {
       setUser(data[0]);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
