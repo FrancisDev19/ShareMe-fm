@@ -26,7 +26,7 @@ const Navbar = ({ searchTerm, setSearchTerm, user }) => {
           </Link>
           <Link
             to="create-pin"
-            className="hidden md:flex bg-black text-white rounded-lg w-12 h-12 md:w-14 md:h-12 justify-center items-center"
+            className="flex bg-black text-white rounded-lg w-12 h-12 md:w-14 md:h-12 justify-center items-center"
           >
             <IoMdAdd />
           </Link>
